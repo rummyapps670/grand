@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rummy Grand - India's No.1 Gameing Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fff;
+      color: #333;
+    }
+
+    h1 {
+      margin-top: 40px;
+      color: #7B1FA2;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .logo {
+      margin-top: 20px;
+      width: 200px;
+      height: auto;
+    }
+
+    .timer {
+      font-size: 22px;
+      color: red;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .download-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .features {
+      font-size: 16px;
+      text-align: left;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .features p {
+      margin: 8px 0;
+      font-weight: bold;
+    }
+
+    .features p span {
+      margin-right: 8px;
+    }
+
+    .orange { color: orange; }
+    .purple { color: #9c27b0; }
+    .green  { color: #4caf50; }
+    .red    { color: red; }
+  </style>
+</head>
+<body>
+
+  <h1>INDIA'S NO 1 GAMEING SITE</h1>
+
+  <img src="273702ce-f08e-4d00-a0f8-9cbc61aea1f4.png" alt="Rummy Grand" class="logo"/>
+
+  <div class="timer" id="timer">00 : 00 : 02</div>
+
+  <a href="https://tinyurl.com/4ey9jwwk" class="download-btn" id="download">⬇️ DOWNLOAD AND PLAY<br><small>Click here</small></a>
+
+  <div class="features">
+    <p><span>✔️</span><span class="orange">FREE BONUS FAST REGISTER</span></p>
+    <p><span>✔️</span><span class="purple">SUPER FAST WITHDRAWAL</span></p>
+    <p><span>✔️</span><span class="green">SUPER FAST DIPOSIT</span></p>
+    <p><span>✔️</span><span class="red">FREE DIPOSIT BONUS</span></p>
+  </div>
+
+  <script>
+    let countdown = 2;
+    const timerElement = document.getElementById('timer');
+
+    const interval = setInterval(() => {
+      countdown--;
+      let sec = countdown < 10 ? '0' + countdown : countdown;
+      timerElement.textContent = `00 : 00 : ${sec}`;
+      if (countdown === 0) {
+        clearInterval(interval);
+        window.location.href = "https://tinyurl.com/4ey9jwwk";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
