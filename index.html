@@ -3,58 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rummy Grand - India's No.1 Gameing Site</title>
+  <title>Rummy Grand - India's No.1 Gaming Site</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ9DX82KBB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GJ9DX82KBB');
+  </script>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #fff;
+      background: #ffffff;
       color: #333;
+      padding: 20px;
     }
 
     h1 {
-      margin-top: 40px;
       color: #7B1FA2;
-      font-size: 24px;
+      font-size: 6vw;
       font-weight: 800;
-      letter-spacing: 1px;
+      margin-top: 20px;
     }
 
     .logo {
-      margin-top: 20px;
-      width: 200px;
-      height: auto;
+      width: 50vw;
+      max-width: 200px;
+      margin: 20px auto;
     }
 
-    .timer {
-      font-size: 22px;
-      color: red;
-      font-weight: bold;
-      margin: 20px 0;
-    }
-
-    .download-btn {
+    .download-btn, .contact-btn {
       background-color: #007bff;
       color: #fff;
       border: none;
       padding: 15px 30px;
-      font-size: 18px;
-      border-radius: 5px;
+      font-size: 5vw;
+      border-radius: 10px;
       cursor: pointer;
-      margin-bottom: 20px;
-      display: inline-block;
+      margin: 15px auto;
+      display: block;
       text-decoration: none;
-    }
-
-    .download-btn:hover {
-      background-color: #0056b3;
+      width: 90%;
+      max-width: 400px;
     }
 
     .features {
-      font-size: 16px;
+      font-size: 4vw;
       text-align: left;
-      max-width: 300px;
+      max-width: 400px;
       margin: 0 auto;
     }
 
@@ -63,7 +65,7 @@
       font-weight: bold;
     }
 
-    .features p span {
+    .features span {
       margin-right: 8px;
     }
 
@@ -71,17 +73,25 @@
     .purple { color: #9c27b0; }
     .green  { color: #4caf50; }
     .red    { color: red; }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 24px; }
+      .download-btn, .contact-btn { font-size: 18px; }
+      .features { font-size: 16px; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>INDIA'S NO 1 GAMEING SITE</h1>
+  <h1>INDIA'S NO 1 GAMING SITE</h1>
 
   <img src="273702ce-f08e-4d00-a0f8-9cbc61aea1f4.png" alt="Rummy Grand" class="logo"/>
 
-  <div class="timer" id="timer">00 : 00 : 02</div>
+  <a href="#" class="download-btn">
+    ⬇️ DOWNLOAD AND PLAY<br><small>Click here</small>
+  </a>
 
-  <a href="https://tinyurl.com/4ey9jwwk" class="download-btn" id="download">⬇️ DOWNLOAD AND PLAY<br><small>Click here</small></a>
+  <a href="https://t.me/Vidhya712" class="contact-btn">📩 Contact Us on Telegram</a>
 
   <div class="features">
     <p><span>✔️</span><span class="orange">FREE BONUS FAST REGISTER</span></p>
@@ -89,21 +99,6 @@
     <p><span>✔️</span><span class="green">SUPER FAST DIPOSIT</span></p>
     <p><span>✔️</span><span class="red">FREE DIPOSIT BONUS</span></p>
   </div>
-
-  <script>
-    let countdown = 2;
-    const timerElement = document.getElementById('timer');
-
-    const interval = setInterval(() => {
-      countdown--;
-      let sec = countdown < 10 ? '0' + countdown : countdown;
-      timerElement.textContent = `00 : 00 : ${sec}`;
-      if (countdown === 0) {
-        clearInterval(interval);
-        window.location.href = "https://tinyurl.com/4ey9jwwk";
-      }
-    }, 1000);
-  </script>
 
 </body>
 </html>
