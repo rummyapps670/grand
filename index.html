@@ -116,12 +116,12 @@
     const timerElement = document.getElementById('timer');
     const downloadLink = document.getElementById('download');
 
+    // Start countdown
     const interval = setInterval(() => {
       countdown--;
       timerElement.textContent = countdown;
       if (countdown === 0) {
         clearInterval(interval);
-        // ✅ Track redirect
         gtag('event', 'auto_redirect', {
           event_category: 'engagement',
           event_label: '5s_redirect'
@@ -130,6 +130,7 @@
       }
     }, 1000);
 
+    // Manual click tracking
     downloadLink.addEventListener('click', () => {
       gtag('event', 'manual_click', {
         event_category: 'button',
